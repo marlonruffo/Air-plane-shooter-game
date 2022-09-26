@@ -57,11 +57,6 @@ import {initRenderer,
 
 
 
-
-
-
-
-
         // avião inimigo 1 e 4(movimento vertical e diagonal)
         loader.load('assets/555.glb', function(gltf){
           let enemy1 = gltf.scene
@@ -79,7 +74,6 @@ import {initRenderer,
             enemy2.scale.set(0.10, 0.10, 0.10)
             enemy2.rotateY(degToReg(90))
         })         
-
          // avião inimigo 3(movimento ARC)
          loader.load('assets/enemyair3.gltf', function(gltf){
             let enemy3 = gltf.scene
@@ -88,7 +82,6 @@ import {initRenderer,
             enemy3.scale.set(0.04, 0.04, 0.04)
             enemy3.rotateY(degToReg(90))
         })         
-
         //submarino
         loader.load('assets/sub2.glb', function(gltf){
             let enemy1 = gltf.scene
@@ -97,7 +90,6 @@ import {initRenderer,
             enemy1.scale.set(0.10, 0.10, 0.10)
             enemy1.rotateY(degToReg(0))
         })  
-
         loader.load('assets/rocket.glb', function(gltf){
           let missil22 = gltf.scene
           scene.add(missil22)
@@ -106,15 +98,9 @@ import {initRenderer,
           missil22.rotateY(degToReg(90))
       })
 
-
-
         //vida
         life(scene,-20,0); 
 
-
-
-
-        
         render();
         function render()
         {

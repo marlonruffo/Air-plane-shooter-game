@@ -338,7 +338,7 @@ function controlledRender()
   renderer.setViewport(0, 0, width, height); // Reset viewport    
   renderer.setScissorTest(false); // Se isso for = true, a tela só aparece o viewport do lado e o resto fica tudo branco
   //renderer.setClearColor("rgb(0, 0, 100)");    //Cor fora do plano
-  //renderer.clear();   // limpa a tela             talvez tirar
+  //renderer.clear();   // limpa a tela            
   renderer.render(scene, camera);   
   if(scene.mapshadow){
     directionalLightShadowMapViewer.render( renderer );
@@ -351,7 +351,7 @@ function controlledRender()
   renderer.setScissorTest(true); // Enable scissor to paint only the scissor are (i.e., the small viewport)
   //renderer.setClearColorHex( 0x000000, 0 );  // Cor da caixa do viewport
   //renderer.setClearAlpha( 0.5 );
-  renderer.clear(); // limpa a tela          /talvez tirar
+  renderer.clear(); // limpa a tela          
   renderer.render(scene, Viewportcamera);  // Render scene of the virtual camera
 }
 

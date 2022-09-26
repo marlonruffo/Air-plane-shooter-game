@@ -40,22 +40,6 @@ export function newPlanes(scene){
         if(x.geometry) return x.geometry.type === 'PlaneGeometry';
     })
 
-    //------------------------
-    //Plane + Water
-    // if (Math.round(camera.position.z) == Math.round((-planeSize * scene.stage)+200)) // momento para criar novo plano
-    // {
-    //     var newplane = new THREE.PlaneGeometry(50, planeSize)
-    //     //var enemys = buildEnemys(scene);
-    //     scene.add(newplane);
-    //     removeOldPlane(scene,plane);
-    //     scene.stage += 1; //suporte pro tamanho do novo plano em Z
-    //     console.log(scene.stage)
-    //     console.log(camera.position.z)
-    //     createWater(scene, newplane)
-    //     //------------------------
-    //     //Terrain
-    //     createTerrain(scene)
-    // }
 
     if((Math.round(camera.position.z + 250)) % 500 == 0 && (Math.round(camera.position.z + 250)) < waterCheckBound){
         waterCheckBound = camera.position.z - 15
@@ -119,16 +103,7 @@ function createWater(scene, plane){
             alpha: 0.5,
         }
         );
-    // let water = new Water( plane, {
-    //     color: 0xb7fff9,
-    //     scale: 6,
-    //     flowDirection: new THREE.Vector2( 1, 1 ),
-    //     textureWidth: 500,
-    //     textureHeight: 500,
-    //     waterNormals: new THREE.TextureLoader().load( 'assets/waternormals.jpg', function ( texture ) {        
-    //         texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
-    //     } ),
-    // } );
+
         
         water.position.set(0,0,((-planeSize) * (scene.stage - 1)) + planeSize/2);
         water.rotation.x = - Math.PI / 2;

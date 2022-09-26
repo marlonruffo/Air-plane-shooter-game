@@ -1,10 +1,4 @@
-//teste
-//------------------------------------------------------------------------
-//observações:
-//colocar knot.BBox.setFromObject(knotboxHelper); dentro do render
-//import * as THREE from 'three'; possivel erro, chamando essa biblioteca, nao consigo chamar a classe TorusKnotGeometry (não sei pq)
-//acredito que checkcollisions tem q ta no render, e a 
-//-------------------------------------------------------------------------
+
 import * as THREE from 'three';
 import {
     createGroundPlaneWired,
@@ -28,7 +22,7 @@ export function groundandobstacles(scene) {
            
         })
         
-        if (Math.round(camera.position.z) == Math.round((-500 * scene.stage)+200)) // dando problema pra setar o valor, parece que nao ta andando o camera position, funciona => camera.position.z==250 ou cameraHolder.position.z ==0
+        if (Math.round(camera.position.z) == Math.round((-500 * scene.stage)+200)) 
         {
             var tamgroundZ = 500; 
             var newplane = new THREE.PlaneGeometry(50, 500)

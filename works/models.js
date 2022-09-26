@@ -150,37 +150,7 @@ function getRandomInt(min, max) {
 
     export function buildEnemys(scene){
 
-        // let camera = scene.children.find(function(x){
-        //     return x.type === 'Object3D';
-        // });
-    
-        // let plane = scene.children.find(function(x){
-        //     if(x.geometry){
-        //         return x.geometry.type === 'PlaneGeometry';
-        //     }
-        // });
-        // var tamgroundZ = 500; 
-        // var possibleX = [-4,-3,-2,-1,1,2,3,4] ;   
-    
-        // var enemys = [];
-        // for(let i = 0; i < (scene.stage * 5); i++){
-        //     var randomx = shuffle(possibleX)[Math.round(Math.random() * 5)];
-        //     var randomz = getRandomInt(-15,20);
-        //     var cube1 = new THREE.Mesh(new THREE.BoxGeometry(1.5, 1.5, 1.5), new THREE.MeshLambertMaterial({ color: 0xff1200 })); //vermelho
-        //     cube1.position.set((randomx*5), 6, -1 * ((scene.stage) * tamgroundZ) - (randomz * 10)); //cria a posição da cubo em x aleatorio no final do plano assim que tem um plano novo obs: tamanho do ground em positivo nesse caso
-        //     var cubebounding1 = new THREE.Box3(new THREE.Vector3(), new THREE.Vector3()); 
-        //     cubebounding1.setFromObject(cube1);
-        //     // cube1.add(cubebounding1);
-        //     cube1.bordBox = cubebounding1;
-        //     enemys.push(cube1);
-        // }
-        // console.log(scene);
-    
-        // enemys.forEach( function ( v ) {
-        //     v.dead = false
-        //     v.deadTimer = 0
-        //     scene.add(v);
-        // } );
+
         
     }
 
